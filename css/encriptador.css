@@ -1,0 +1,311 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #E5E5E5;
+}
+
+.logo-alura {
+    margin: 40px 0 0 80px;
+    width: 30px;
+    display: inline-block;
+}
+
+.logo-alura img{
+    pointer-events: none;
+}
+
+.caja-principal{
+    position: relative;
+    width: 1200px;
+    margin: 0px auto;
+}
+
+.caja-encriptar{ 
+    width: 700px;
+    margin: 80px 0 0 60px;
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    text-align: left;
+    
+}
+
+#texto-encriptar { 
+    width: 700px;
+    height: 615px;
+    border: none;
+    background: #E5E5E5;
+    font-size: 32px;
+    font-family: 'Poppins', sans-serif
+}
+
+.textEncriptar{ 
+    resize: none;
+    color: #0A3871; 
+}
+
+.textEncriptar::placeholder { 
+    color: #0A3871; 
+}
+
+.caja-encriptar p{
+    font-size: 12px;
+    margin: 0 0 15px;
+    color: #495057;
+}
+
+.caja-encriptar p:before{
+    content: "! ";
+}
+
+.caja-encriptado{
+    width: 350px;
+    height: 850px;
+    padding: 25px 25px 100px 25px;
+    float: right;
+    box-sizing: border-box;
+    position: relative;
+    bottom: 50px;
+    left: 80px;
+    background: white;
+    border-radius: 32px;
+    text-align: center;
+    box-shadow: 5px 5px 10px 0px lightslategrey;
+
+}
+
+#texto-encriptado {
+    width: 300px;
+    height: 740px;
+    background: white;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+
+}
+
+.textEncriptado{
+    resize: none;
+    color: #495057;
+}
+
+button {
+    width: 300px;
+    margin: 0 25px 0 0;
+    height: 60px;
+    border-radius: 16px;
+    font-size: 15px;
+    padding: 5px;
+    border: none;
+}
+
+.boton-1 {
+    background: #0A3871;
+    color: #FFFF;
+}
+
+.boton-2{
+    background-color: transparent;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+}
+
+.caja-encriptado img{
+    position: relative;
+    top: 200px;
+    right: 15px;
+    pointer-events: none;
+}
+
+.caja-encriptado h3{
+    color: #495057;
+    position: relative;
+    top: 200px;
+    font-weight: 800;
+    font-size: 23px;
+}
+
+.caja-encriptado p {
+    color: #495057;
+    position: relative;
+    top: 225px;
+}
+
+footer{
+    margin: 0 auto;
+    height: 100%;
+    height: 36px;
+    background: #0A3871;
+    margin-top: 25px;
+}
+
+.copyright{
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+}
+
+@media screen and (max-width:1400px){
+    .caja-principal{
+        width: 960px;
+    }
+
+    .caja-encriptar {
+        width: 600px;
+        margin: 15px 0 0 0;
+    }
+
+    #texto-encriptar{
+        width: 620px;
+        height: 370px;
+    }
+
+    button {
+        width: 250px;
+    }
+
+    .caja-encriptado{
+        height: 530px;
+    }
+
+    .caja-encriptado img{
+        top: 25px;
+    }
+
+    .caja-encriptado h3{
+        top: 25px;
+    }
+
+    .caja-encriptado p{
+        top: 55px;
+    }
+
+    #texto-encriptado {
+        height: 410px;
+    }
+
+    #mensaje-encriptado button{
+        margin: 10px 0 0 0;
+    }
+
+    footer{
+        margin-top: 23px;
+    }
+
+}
+
+@media screen and (max-width:1024px){
+    .caja-principal {
+        width: auto;
+    }
+
+    .caja-encriptar{
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+
+    }
+
+    #texto-encriptar {
+        width: 85%;
+        margin: 60px 40px 0;
+        height: 670px;
+
+    }
+
+    .caja-encriptar p{
+        font-size: 16px;
+        margin: 10px 0;
+    }
+
+    .caja-encriptar button{
+        width: 200px;
+        margin: 0 30px 0 0;
+        font-size: 20px;
+    }
+
+    .p-botones{
+        margin: 0 0 0 40px;
+    }
+
+    .caja-encriptado {
+        width: 80%;
+        padding: 23px 0;
+        margin: 35px auto;
+        position: static;
+        height: auto;
+        float: none;
+        box-shadow: -1px 4px 10px 0px lightslategrey;
+    }
+
+    .caja-encriptado button{
+        margin: 0;
+        min-width: 40px;
+    }
+
+    #texto-encriptado {
+        width: 85%;
+        padding: 12px;
+        height: 200px;
+    }
+
+    .caja-encriptado p {
+        position: static;
+        padding: 10px 0;
+    }
+
+    .caja-encriptado h3 {
+        position: static;
+        padding: 10px;
+        font-size: 25px;
+    }
+
+    .caja-encriptado img{
+        display: none;
+    }
+
+    footer{
+        height: 45px;
+    }
+}
+
+@media screen and (max-width:499px){
+    .logo-alura{
+        margin: 30px 0 0 30px; 
+        width: 40px
+    }
+
+    .logo-alura img {
+        width: 100%;
+    }
+
+    .caja-encriptar {
+        margin: 0;
+    }
+
+    #texto-encriptar{
+        height: 400px;
+        margin: 60px 30px 0;
+    }
+
+    .caja-encriptar button {
+        width: 95%;
+        display: block;
+        margin: 25px 0;
+    }
+
+    .p-botones {
+        margin: 0 0 0 20px;
+    }
+
+    #mensaje-encriptado button {
+        width: 85%;
+        max-width: 250px;
+    }
+
+    footer{
+        height: 60px;
+    }
+
+}
+
+

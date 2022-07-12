@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagenes/alura-icono.ico">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/encriptador.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    
+    
+</head>
+<body>
+    <main>
+            <div class="logo-alura">
+                <img  src="imagenes/vector.png">
+            </div>
+
+        <section class="caja-principal">
+
+            <div class="caja-encriptar">
+                <form id="form-encriptar">
+                    <textarea name="encriptar" cols="10" rows="10" id="texto-encriptar" class="textEncriptar"
+                    placeholder="Ingrese el Texto Aquí"></textarea>
+                    <div class="p-botones">
+                    <p>Solo letras minúsculas y sin acentos</p>
+                    <button class="boton-1" id="btn-encriptar">Encriptar</button><button class="boton-2" id="btn-desencriptar">Desencriptar</button>
+                    </div>
+                    
+                </form>
+            </div>
+
+            <div class="caja-encriptado">
+
+                <div id="sin-mensaje">
+                    <img src="imagenes/muñeco.png" alt="Muñeco404">
+                    <h3>Ningún mensaje fue encontrado</h2>
+                    <p>Ingresa el texto que desees encriptar o desencriptar</p>
+                </div>
+
+                <div id="mensaje-encriptado">
+                    <textarea name="encriptado" cols="10" rows="10" id="texto-encriptado" class="textEncriptado"
+                    placeholder="Acá tendria que aparecer el texto a ser descifrado" readonly></textarea>
+                    <button id="btn-copiar" class="boton-2">Copiar</button>
+                </div>
+                
+            </div>
+            
+        </section>
+
+        <footer>
+            <p class="copyright"> Trejo Juan Manuel - juanmanueltrejo017@gmail.com - Oracle - Alura</p>
+        </footer>
+    </main>
+
+    <script src="js/encriptador.js"></script>
+
+</body>
+</html>
